@@ -4,37 +4,42 @@ html {
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    justify-content: center;
+    
 }
 
 body {
     justify-content: center;
-    
 }
+
+/*Header Section*/
 
 header {
     display: inline-flex;
     height: 69px;
     box-sizing: border-box;
-    border-bottom: seashell solid 1px;
+    border-bottom: 1px solid seashell;
     width: 100vw;
     justify-content: space-between;
     background-color: black;
     padding-right: 20px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
 }
 
 li{
     list-style-type: none;
     display: inline-block;
-    align-content: space-around;
     margin: 10px;
     justify-content: center;
-    vertical-align: auto;
+    padding-top: 10px
 }
 
 li a {
+    display: inline-block;
     color: seashell;
-    
+    justify-content: center;
 }
 
 header img {
@@ -42,13 +47,32 @@ header img {
     height: 50px;
 }
 
+/*Main Parent Section */
+
+main {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 66px;
+}
+
+/* Mission Section */
+
 .mission {
     display: flex;
     background-image: url("/Images/img-mission-background.jpg");
-    height: 700px;
-    width: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 700px;
+    max-width: 1200px;
+    flex-flow: column;
     align-content: center;
-    margin: auto;
+    align-items: center;
+    flex: 1 1200px;
+    margin: 0 auto;
 }
 .mission-text {
     align-items: center;
@@ -66,6 +90,8 @@ header img {
     margin: 12px
 }
 
+/*Tea of the Month Section */
+
 .month {
     display: flex;
     margin: auto;
@@ -74,10 +100,35 @@ header img {
     text-align: center;
 }
 
-.month h2 h4{
+.month h2, h4{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin: auto;
+    margin: 10px auto;
     
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 100px;
+}
+
+.picdiv {
+    justify-content: center;
+    margin: 20px;
+}
+
+.picdiv h4 {
+    justify-content: center;
+}
+
+.picdiv img {
+    justify-content: center;
+    flex: 1 300px;
+    max-width: 300px;
+    max-height: 200px;
 }
