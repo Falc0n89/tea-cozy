@@ -50,12 +50,12 @@ header img {
 /*Main Parent Section */
 
 main {
-    position: relative;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 66px;
+    flex: 1 0 100%
 }
 
 /* Mission Section */
@@ -67,12 +67,13 @@ main {
     background-size: cover;
     background-position: center;
     max-height: 700px;
+    width: 90%;
     max-width: 1200px;
+    box-sizing: border-box;
     flex-flow: column;
     align-content: center;
     align-items: center;
-    flex: 1 1200px;
-    margin: 0 auto;
+    flex: 1 0 1200px;
 }
 .mission-text {
     align-items: center;
@@ -80,15 +81,16 @@ main {
     text-align: center;
     margin: auto;
     width: 100%;
+    flex-shrink: 1;
 }
 
-.mission-text h2 {
+.mission-text h2, h4 {
     margin: 12px 0px;
+    display: flex;
+    justify-content: center;
 }
 
-.mission-text h4 {
-    margin: 12px
-}
+
 
 /*Tea of the Month Section */
 
@@ -131,4 +133,21 @@ main {
     flex: 1 300px;
     max-width: 300px;
     max-height: 200px;
+}
+
+/* Locations Section */
+
+.locations {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 500px;
+    background-image: url("./Images/img-locations-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
 }
