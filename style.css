@@ -1,5 +1,4 @@
 html {
-    display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
@@ -72,6 +71,7 @@ header img {
     margin: auto;
     flex-flow: column;
     align-content: center;
+    text-align: center;
 }
 
 .month h2 h4{
@@ -79,4 +79,5 @@ header img {
     flex-wrap: wrap;
     align-content: center;
     margin: auto;
+    
 }
