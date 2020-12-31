@@ -62,7 +62,7 @@ main {
 
 .mission {
     display: flex;
-    background-image: url("/Images/img-mission-background.jpg");
+    background-image: url("./Images/img-mission-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,7 +165,7 @@ h2 h4{
     flex-flow: row;
     text-align: center;
     justify-content: center;
-    margin: 0 -5px;
+    margin: 0;
 }
 
 .address {
@@ -175,7 +175,7 @@ h2 h4{
     background-color: black;
     justify-content: center;
     margin: 15px 20px;
-    flex: 1 0 300px;
+    flex: 1 1 300px;
     height: 300px;
     max-width: 300px;
     opacity: 1;
@@ -183,6 +183,7 @@ h2 h4{
 
 .address h4 {
     font-weight: lighter;
+    flex-shrink: 1;
 }
 
 .info {
@@ -205,3 +206,4 @@ footer {
     margin-left: 30px;
     padding-bottom: 30px;
 }
+
